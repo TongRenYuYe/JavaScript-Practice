@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prirates Booty</title>
+    <script>
+        function handler() {
+            alert(doneMessage);
+        }
+        function makeTimer(doneMessage,n){
+            setTimeout(handler,n);
+        }
+        /*handler存储的是函数handler的引用，所以要去找闭包handler中的函数和环境，
+        而在闭包handler的环境中，doneMessage并没有值，所以不显示
+        
+        注：变量handler存储的既有函数handler也有闭包handler中的变量doneMessage的值*/
+        makeTimer("Cookies are done!",1000);
+    </script>
+</head>
+
+<body>
+    
+</body>
+
+</html>
