@@ -1,3 +1,9 @@
+<!--
+    战舰游戏的HTML代码：
+    一个显示消息的div
+    一个用来填方战舰的表格
+    一个获取用户输入的表单
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,6 +16,7 @@
 <body>
     <div id="board">
         <div id="messageArea"></div>
+        <!--用于显示用户输入后的信息-->
         <table>
             <tr>
                 <td id="00"></td>
@@ -75,10 +82,12 @@
                 <td id="66"></td>
             </tr>
         </table>
+        <!--建一个七行七列的表格-->
         <form>
             <input type="text" id="guessInput" placeholder="A0">
             <input type="button" id="fireButton" value="Fire!">
         </form>
+        <!--建表单获取用户输入-->
     </div>
     <script src="../js/battleship.js"></script>
 </body>
