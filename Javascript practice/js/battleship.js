@@ -1,3 +1,11 @@
+/**
+ * 这是一个战舰游戏的JS代码
+ * 对象model定义战舰
+ * 对象view控制视图
+ * 对象controller控制游戏的核心逻辑
+ * 三个对象各司其职
+ * 代码的最后是单击和enter按钮的事件响应程序
+ */
 var model = {
     boardSize: 7,
     numShips: 3,
@@ -108,6 +116,7 @@ var controller = {
         }
     }
 }
+
 function parseGuess(guess) {
     var alphabet = ["A", "B", "C", "D", "E", "F", "G"];
     if (guess === null || guess.length !== 2) {
@@ -125,24 +134,26 @@ function parseGuess(guess) {
             return row + column;
         }
     }
-    return null;//？
+    return null;
 }
-
-//
+//函数parseGuess将输入的字符串中的字母转换成数字，并对输入内容进行格式检查
 function init() {
     document.getElementById("fireButton").onclick = handleFireButton;
     document.getElementById("guessInput").onkeypress = handleKeyPress;
     model.generateShipLocations();
 }
+//创建时间事件响应程序
 function handleFireButton() {
     var guess = document.getElementById("guessInput").value;
     controller.processGuess(guess);
     document.getElementById("guessInput").value = "";
 }
+//点击按钮的事件响应程序
 function handleKeyPress(e) {
     if (e.keyCode == 13) {
         document.getElementById("fireButton").click();
         return false;
     }
 }
-window.onload = init;
+//按回车键的事件响应程序
+window.onload = init();
