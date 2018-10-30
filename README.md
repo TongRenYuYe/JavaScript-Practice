@@ -2,7 +2,7 @@
 
 JS practice
 
-## 这个repo存储的是我在学习[Head First JavaScript Programming](http://t.cn/EZC7Qxy)这本书时所练习的部分但是**重要**的代码
+## 这个repo里面的是我在学习[Head First JavaScript Programming](http://t.cn/EZC7Qxy)这本书时所练习的部分代码，虽然复杂度不高但是**重要**。
 
 ## 项目代码
 
@@ -20,32 +20,28 @@ JS practice
 
 - img
 
-    1.board.jpg
+    1. board.jpg
 
-    2.map.jpg
+    2. map.jpg
 
-    3.miss.png
+    3. miss.png
 
-    4.ship.png
-
-    5.zero.jpg
-
-    6.zeroblur.jpg
+    4. ship.png
 
 - js
 
-    1.battleship.js
+    1. battleship.js
 
-    2.buble.js
+    2. buble.js
 
-    3.colsure1.js
+    3. colsure1.js
 
-    4.colsure2.js
+    4. colsure2.js
 
-    5.test1.js
+    5. test1.js
 
-    6.test2.js
+    6. test2.js
 
-    7.test3.js
+    7. test3.js
 
-    8.test4.js
+    8. test4.js
