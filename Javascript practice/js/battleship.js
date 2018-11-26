@@ -156,4 +156,4 @@ function handleKeyPress(e) {
     }
 }
 //按回车键的事件响应程序
-window.onload = init();
+window.onload = init;
